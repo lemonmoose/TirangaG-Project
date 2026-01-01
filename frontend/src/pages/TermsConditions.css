@@ -1,0 +1,146 @@
+/* Terms & Conditions Page Styles */
+.terms-page {
+  min-height: calc(100vh - 200px);
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.terms-page h1 {
+  font-size: 2.2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.intro-box {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 0;
+}
+
+.intro-box p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.intro-box p:last-child {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.terms-content {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.terms-section {
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.terms-section h2 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.terms-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify;
+}
+
+.closing-box {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  max-width: 900px;
+  margin: 0 auto;
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+}
+
+.closing-box h2 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.closing-box p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .terms-page {
+    padding: 40px 20px;
+  }
+
+  .terms-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .terms-section h2,
+  .closing-box h2 {
+    font-size: 1rem;
+  }
+
+  .terms-section p,
+  .intro-box p,
+  .closing-box p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-page {
+    padding: 30px 15px;
+  }
+
+  .terms-page h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .intro-box,
+  .closing-box {
+    margin-bottom: 25px;
+  }
+
+  .terms-section {
+    margin-bottom: 20px;
+  }
+
+  .terms-section h2,
+  .closing-box h2 {
+    font-size: 0.95rem;
+  }
+
+  .terms-section p,
+  .intro-box p,
+  .closing-box p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+}

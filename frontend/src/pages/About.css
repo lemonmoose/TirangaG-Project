@@ -1,0 +1,459 @@
+/* About Page Styles */
+.about-page {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+}
+
+.about-page h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hero-text h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1.05rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Company Values Section */
+.company-values {
+  margin-bottom: 60px;
+}
+
+.company-values h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.value-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 4px solid #00a86b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.value-card h3 {
+  font-size: 1.3rem;
+  color: #00a86b;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background-color: white;
+  padding: 50px 40px;
+  border-radius: 8px;
+  margin-bottom: 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-us h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.why-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.checkmark {
+  font-size: 2rem;
+  color: #00a86b;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.why-item p {
+  font-size: 1.05rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Team Section */
+.team-section {
+  margin-bottom: 60px;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.team-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-info p {
+  font-size: 1.05rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.team-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team-img-main {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.team-img-secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.team-img-secondary img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Statistics Section */
+.stats-section {
+  background: linear-gradient(135deg, #00a86b 0%, #008c4a 100%);
+  color: white;
+  padding: 60px 40px;
+  border-radius: 8px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.stats-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.about-page .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.about-page .stat-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-page .stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-page .stat-label {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.mission,
+.vision {
+  background-color: white;
+  padding: 35px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mission h3,
+.vision h3 {
+  font-size: 1.8rem;
+  color: #00a86b;
+  margin-bottom: 15px;
+}
+
+.mission p,
+.vision p {
+  font-size: 1.05rem;
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* CTA Section */
+.about-cta {
+  background: linear-gradient(135deg, #00a86b 0%, #008c4a 100%);
+  color: white;
+  padding: 50px 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.about-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.about-cta .cta-btn {
+  background-color: white;
+  color: #00a86b;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-cta .cta-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-page h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .company-values h2,
+  .why-choose-us h2,
+  .team-section h2,
+  .stats-section h2 {
+    font-size: 2rem;
+  }
+
+  .values-grid,
+  .why-grid {
+    gap: 15px;
+  }
+
+  .value-card {
+    padding: 20px;
+  }
+
+  .team-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 25px;
+  }
+
+  .team-img-main {
+    height: 250px;
+  }
+
+  .team-img-secondary img {
+    height: 150px;
+  }
+
+  .mission-vision {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-page .stats-grid {
+    gap: 20px;
+  }
+
+  .about-page .stat-card {
+    padding: 20px;
+  }
+
+  .about-page .stat-number {
+    font-size: 2.2rem;
+  }
+
+  .about-cta {
+    padding: 40px 25px;
+  }
+
+  .about-cta h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 40px 15px;
+  }
+
+  .about-page h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-hero {
+    padding: 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .company-values h2,
+  .why-choose-us h2,
+  .team-section h2,
+  .stats-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .value-card {
+    padding: 15px;
+  }
+
+  .why-choose-us {
+    padding: 25px 20px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-content {
+    padding: 20px;
+  }
+
+  .team-img-main {
+    height: 200px;
+  }
+
+  .team-img-secondary img {
+    height: 120px;
+  }
+
+  .mission,
+  .vision {
+    padding: 20px;
+  }
+
+  .stats-section {
+    padding: 40px 20px;
+  }
+
+  .about-page .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .about-page .stat-label {
+    font-size: 0.95rem;
+  }
+
+  .about-cta {
+    padding: 30px 20px;
+  }
+
+  .about-cta h2 {
+    font-size: 1.3rem;
+  }
+
+  .about-cta p {
+    font-size: 1rem;
+  }
+}
+

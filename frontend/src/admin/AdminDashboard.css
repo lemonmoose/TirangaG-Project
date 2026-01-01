@@ -1,0 +1,514 @@
+/* Admin Dashboard Page Styles */
+.dashboard-page {
+  background: linear-gradient(135deg, #f5f7fa 0%, #f8f9fa 100%);
+  min-height: 100vh;
+}
+
+/* Admin Header */
+.admin-header {
+  background: linear-gradient(135deg, #1e7e34 0%, #00a86b 100%);
+  color: white;
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #138808;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.profile-icon {
+  font-size: 1.2rem;
+}
+
+.admin-header h1 {
+  color: white;
+  font-size: 1.75rem;
+  margin: 0 0 4px 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.header-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.logout-btn {
+  padding: 10px 24px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn:active {
+  transform: translateY(0);
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+/* Sections */
+.stats-section,
+.actions-section,
+.quick-actions-section,
+.recent-enquiries-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.3px;
+}
+
+/* Dashboard Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid #00a86b;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card.enquiries {
+  border-left-color: #3498db;
+}
+
+.stat-card.new-enquiries {
+  border-left-color: #e74c3c;
+}
+
+.stat-card.qualified {
+  border-left-color: #27ae60;
+}
+
+.stat-card.conversion {
+  border-left-color: #f39c12;
+}
+
+.stat-card.projects {
+  border-left-color: #9b59b6;
+}
+
+.stat-card.completed {
+  border-left-color: #16a085;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  color: #00a86b;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f9f6;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover .stat-icon {
+  transform: scale(1.15) rotate(5deg);
+  background: #e0f2ed;
+}
+
+.stat-card.enquiries .stat-icon { 
+  color: #3498db; 
+  background: #f0f7ff; 
+}
+
+.stat-card.enquiries:hover .stat-icon {
+  background: #e0efff;
+  color: #2980b9;
+}
+
+.stat-card.new-enquiries .stat-icon { 
+  color: #e74c3c; 
+  background: #ffe8e8; 
+}
+
+.stat-card.new-enquiries:hover .stat-icon {
+  background: #ffd6d6;
+  color: #c0392b;
+}
+
+.stat-card.qualified .stat-icon { 
+  color: #27ae60; 
+  background: #e8f8ed; 
+}
+
+.stat-card.qualified:hover .stat-icon {
+  background: #d6f1db;
+  color: #1e8449;
+}
+
+.stat-card.conversion .stat-icon { 
+  color: #f39c12; 
+  background: #fff9e8; 
+}
+
+.stat-card.conversion:hover .stat-icon {
+  background: #fff3d6;
+  color: #d68910;
+}
+
+.stat-card.projects .stat-icon { 
+  color: #9b59b6; 
+  background: #f8f0ff; 
+}
+
+.stat-card.projects:hover .stat-icon {
+  background: #f0e0ff;
+  color: #7d3c98;
+}
+
+.stat-card.completed .stat-icon { 
+  color: #16a085; 
+  background: #e8f8f5; 
+}
+
+.stat-card.completed:hover .stat-icon {
+  background: #d6f1ed;
+  color: #117a65;
+}
+
+.stat-info h3 {
+  color: #666;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e7e34;
+  margin: 0;
+  line-height: 1;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Quick Actions */
+.quick-actions-section,
+.recent-enquiries-section {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Admin Navigation */
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-link {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  color: #2c3e50;
+  padding: 16px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid #f0f0f0;
+}
+
+.nav-link svg {
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #1e7e34;
+  border-color: #1e7e34;
+  background: white;
+}
+
+.nav-link:hover svg {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.nav-link:active {
+  transform: translateX(2px);
+}
+
+.enquiries-link { color: #3498db; }
+.enquiries-link:hover { color: #3498db; border-color: #3498db; }
+
+.projects-link { color: #9b59b6; }
+.projects-link:hover { color: #9b59b6; border-color: #9b59b6; }
+
+.analytics-link { color: #f39c12; }
+.analytics-link:hover { color: #f39c12; border-color: #f39c12; }
+
+.users-link { color: #e74c3c; }
+.users-link:hover { color: #e74c3c; border-color: #e74c3c; }
+
+/* Recent Enquiries */
+.enquiries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.enquiry-item {
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #00a86b;
+  transition: all 0.2s ease;
+}
+
+.enquiry-item:hover {
+  background: #f0f7f4;
+  border-left-color: #1e7e34;
+}
+
+.enquiry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.enquiry-name {
+  font-weight: 600;
+  color: #1e7e34;
+}
+
+.enquiry-status {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.enquiry-status.new {
+  background: #e74c3c;
+  color: white;
+}
+
+.enquiry-status.qualified {
+  background: #27ae60;
+  color: white;
+}
+
+.enquiry-status.contacted {
+  background: #3498db;
+  color: white;
+}
+
+.enquiry-message {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+
+.enquiry-date {
+  color: #999;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.no-data {
+  color: #999;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 20px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-right {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .admin-profile {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .logout-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .admin-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .dashboard-content {
+    padding: 24px 20px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .stat-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stat-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    padding: 16px 20px;
+  }
+
+  .admin-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .header-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .dashboard-content {
+    padding: 16px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .stat-card {
+    padding: 16px;
+  }
+
+  .stat-value {
+    font-size: 1.3rem;
+  }
+
+  .quick-actions-section,
+  .recent-enquiries-section {
+    padding: 16px;
+  }
+
+  .nav-link {
+    padding: 14px 16px;
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+}

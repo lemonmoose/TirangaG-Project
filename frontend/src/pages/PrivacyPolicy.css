@@ -1,0 +1,57 @@
+/* Privacy Policy Page Styles */
+.page {
+  min-height: calc(100vh - 200px);
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.page h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page p {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 40px 20px;
+  }
+
+  .page h1 {
+    font-size: 2rem;
+  }
+
+  .page p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 30px 15px;
+  }
+
+  .page h1 {
+    font-size: 1.5rem;
+  }
+
+  .page p {
+    font-size: 0.95rem;
+  }
+}
